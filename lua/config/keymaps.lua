@@ -48,8 +48,10 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 map("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
 map("n", "<leader>gr", vim.lsp.buf.references, { desc = "Go to References" })
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
+------------------------------------------------------
 -- Formatting (none-ls or LSP)
 map("n", "<leader>gf", vim.lsp.buf.format, { desc = "Format File" })
+------------------------------------------------------------
 -- Terminal mode window navigation
 vim.api.nvim_set_keymap('t', '<C-h>', [[<C-\><C-n><C-w>h]], opts)
 vim.api.nvim_set_keymap('t', '<C-j>', [[<C-\><C-n><C-w>j]], opts)
